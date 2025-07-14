@@ -67,6 +67,7 @@ In this exam, I created seperate pages to handle each functionality. Also create
     
     Events that are already full will be grayed out and will show "🚫 Event Full – RSVPs Closed" Message. 
     Events are filtered, Past events will not be shown.
+    Long string on name,location and description has been shortened , tool tip with the full string will show when you hover into them.
    
 3. <strong>Log in Page.</strong>
 
