@@ -8,7 +8,8 @@ import {
 import React, { createContext, useState, ReactNode, useEffect } from "react";
 import axios from "axios";
 import { showError, showSuccess } from "../utils/ToastHelper";
-const API_URL = "https://localhost:7038/api";
+import { API_URL } from "../api/apiConfig";
+
 
 const EventContext = createContext<EventContextType>({} as EventContextType);
 export const EventProvider = ({ children }: { children: ReactNode }) => {

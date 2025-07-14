@@ -1,7 +1,7 @@
 import React, { createContext, useState, ReactNode, useEffect } from "react";
 import axios from "axios";
 import {showError} from "../utils/ToastHelper"
-const API_URL = "https://localhost:7038/api";
+import { API_URL } from "../api/apiConfig";
 
 interface UserContextType {
   user: string | null;
