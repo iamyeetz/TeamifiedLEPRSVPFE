@@ -1,10 +1,25 @@
 # TeamifiedLEPRSVPFE
-Teamified Local Event Planner &amp; RSVP Tracker Frontend
-
+<p>Teamified Local Event Planner &amp; RSVP Tracker Frontend</p>
+<p>TeamifiedLEPRSVPBE Link : https://github.com/iamyeetz/TeamifiedLEPRSVPBE.git</p>
 
 The application is built using <strong>Reactjs</strong> and <strong>TypeScript</strong> to promote type-safe development. Its structure and styling are designed with <strong>Tailwind CSS</strong>.
-
 NOTE : Frontend is running in : <strong>http://localhost:5174/</strong>
+
+<pre>
+<h3>Instruction</h3>
+1. Clone the code
+2. If not on the project folder on terminal run :  <strong>cd TeamifiedLEPRSVPFE</strong>
+3. On the root folder of TeamifiedLEPRSVPFE open terminal and run : <strong>npm install</strong>
+4. After installing all libraries and initializing the project check and make sure API Project is running on https://localhost:7038/api 
+    in order to call the enpoints properly, if you need to run it on other port just change it on 
+    <strong>apiConfig.ts ➜ export const API_URL = "https://localhost:7038/api";</strong>
+5.  run the command to run the frontend :  <strong>npm run dev</strong>
+    make sure on terminal it will show   ➜  Local:   http://localhost:5174/
+
+NOTE : if for some reason you changed vite.config.js  ➜  server: {port: 5174,} you also need to update the CORS setup on project.cs ➜ policy.WithOrigins("http://localhost:5174")
+</pre>
+
+
 
 <pre>
 <strong>Available URLS--</strong>
