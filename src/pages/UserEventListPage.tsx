@@ -44,15 +44,11 @@ const UserEventListPage = () => {
           </Link>
         </div>
         <div>
-          <Link to="/addUpdateEvent">
-            <span className="bg-gray-100 w-30 p-2 text-xs font-semibold text-gray-600 rounded-xl border-2 border-gray-300 hover:border-black">
+          <Link className="bg-gray-100 w-30 p-2 text-xs font-semibold text-gray-600 rounded-xl border-2 border-gray-300 hover:border-black" to="/addUpdateEvent">
               Add New Event
-            </span>
           </Link>
-          <Link to="/">
-            <span className="w-30 p-2 text-xs font-semibold text-gray-600  hover:text-gray-900">
+          <Link className="w-30 p-2 text-xs font-semibold text-gray-600  hover:text-gray-900" to="/">
               View Public Events
-            </span>
           </Link>
         </div>
       </div>

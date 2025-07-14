@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {Link} from 'react-router-dom'
 const Login = ({ handleLogin }) => {
   const [username, setUsername] = useState<string>("");
 
@@ -17,7 +18,7 @@ const Login = ({ handleLogin }) => {
       >
         Login
       </button>
-      <a href="/">View Public Events</a>
+      <Link className="w-30 p-2 text-xs font-semibold text-gray-600  hover:text-gray-900" to="/">View Public Events</Link>
     </div>
   );
 };

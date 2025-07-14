@@ -41,7 +41,7 @@ const EventCard = ({ event, handleDelete, handleRSVP }: EventCardProps) => {
   // validations for conditional rendering of elements
   const hasLoginUser = user ? true : false;
   const isEventFull = event.currentReservations === event.maxReservationNumber;
-  const hasUserReserved = event.reservations?.includes(user ?? "");
+  const hasUserReserved = event.reservations?.includes(user);
   const isOnUserCreatedEventListPage = isEventListPage;
   const canRSVP = !isOnUserCreatedEventListPage && !isEventFull;
   const isAnonymousTryingToRSVP = !hasLoginUser && canRSVP;
@@ -62,7 +62,7 @@ const EventCard = ({ event, handleDelete, handleRSVP }: EventCardProps) => {
         <h3 className="text-lg font-semibold mb-2">
           {handleLongText(event.eventName, 30)}
         </h3>
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 mt-2 w-max px-2 py-1 text-sm text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 mt-2 w-auto max-w-[300px] break-words py-1 text-sm text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
           {event.eventName}
         </div>
       </div>
@@ -79,7 +79,7 @@ const EventCard = ({ event, handleDelete, handleRSVP }: EventCardProps) => {
             <span className="font-medium">Location:</span>{" "}
             {handleLongText(event.location, 14)}
           </p>
-          <div className="absolute left-1/2 top-0 -translate-x-1/2 mt-2 w-48 break-words px-2 py-1 text-sm text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+          <div className="absolute left-1/2 top-0 -translate-x-1/2 mt-2 w-auto max-w-[300px] break-words px-2 py-1 text-sm text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
             {event.location}
           </div>
         </div>
@@ -88,7 +88,7 @@ const EventCard = ({ event, handleDelete, handleRSVP }: EventCardProps) => {
             <span className="font-medium">Description:</span>{" "}
             {handleLongText(event.description, 14)}
           </p>
-          <div className="absolute left-1/2 top-0 -translate-x-1/2 mt-2 w-48 break-words px-2 py-1 text-sm text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+          <div className="absolute left-1/2 top-0 -translate-x-1/2 mt-2 w-auto max-w-[300px] break-words px-2 py-1 text-sm text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
             {event.description}
           </div>
         </div>
@@ -126,7 +126,7 @@ const EventCard = ({ event, handleDelete, handleRSVP }: EventCardProps) => {
         ) : (
           <></>
         )}
-        {isUserReservedOutsideUserCreatedEventListPage ? (
+        {hasLoginUser && isUserReservedOutsideUserCreatedEventListPage ? (
           <strong>🎉 You’re in! Your reservation is confirmed.</strong>
         ) : (
           <></>
