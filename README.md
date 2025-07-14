@@ -1,6 +1,6 @@
 # TeamifiedLEPRSVPFE
-Teamified Local Event Planner &amp; RSVP Tracker Frontend
-TeamifiedLEPRSVPBE Link : https://github.com/iamyeetz/TeamifiedLEPRSVPBE.git
+<p>Teamified Local Event Planner &amp; RSVP Tracker Frontend</p>
+<p>TeamifiedLEPRSVPBE Link : https://github.com/iamyeetz/TeamifiedLEPRSVPBE.git</p>
 
 The application is built using <strong>Reactjs</strong> and <strong>TypeScript</strong> to promote type-safe development. Its structure and styling are designed with <strong>Tailwind CSS</strong>.
 NOTE : Frontend is running in : <strong>http://localhost:5174/</strong>
