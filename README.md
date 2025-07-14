@@ -34,13 +34,13 @@ In this exam, I created seperate pages to handle each functionality. Also create
         - RSPV Button (Should be logged in and event is still not full)
         - Info (Reservation Info , Event Status , Anonymous message) 
 </pre>
-
+<div>
     <strong>If browsing anonymously</strong> 
     <ul>
     <li>Available events you can join will have a message of "Login to RSVP" to encourage you to "log in" in order to do a Reservation.</li>
     <li>Login button is available on top-right hand side of the application and will take you to login page</li>
     </ul>
-                                                     
+</div>                                                
     <strong>If browsing with account</strong>
     <ul>
     <li>RSVP button is visible only for events with available slots.</li>
@@ -51,7 +51,7 @@ In this exam, I created seperate pages to handle each functionality. Also create
 
     Events that are already full will be grayed out and will show "🚫 Event Full – RSVPs Closed" Message. 
     Events are filtered, Past events will not be shown.
-     
+   
 3. <strong>Log in Page.</strong>
 
     No additional validations are performed here — simply enter your username and an API call will be made to the AuthController.
@@ -101,5 +101,6 @@ Items that can be added if there's still time.
 1. Pagination
 2. Cancel Reservation
 3. [Notification tab] keep you notify if events you signed is approaching
+4. Modal for Event Creation Confirmation
 4. Test
 5. Responsive styling
