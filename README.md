@@ -3,8 +3,18 @@ Teamified Local Event Planner &amp; RSVP Tracker Frontend
 
 
 The application is built using <strong>Reactjs</strong> and <strong>TypeScript</strong> to promote type-safe development. Its structure and styling are designed with <strong>Tailwind CSS</strong>.
-
 NOTE : Frontend is running in : <strong>http://localhost:5174/</strong>
+
+<pre>
+<h3>Instruction</h3>
+1. Clone the code
+2. If not on the project folder on terminal run :  <strong>cd TeamifiedLEPRSVPFE</strong>
+3. On the root folder of TeamifiedLEPRSVPFE open terminal and run : <strong>npm install</strong>
+4. After installing all libraries and initializing the project, run the command :  <strong>npm run dev</strong>
+    make sure on terminal it will show   ➜  Local:   http://localhost:5174/
+</pre>
+
+
 
 <pre>
 <strong>Available URLS--</strong>
