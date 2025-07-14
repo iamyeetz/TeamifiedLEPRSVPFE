@@ -64,6 +64,7 @@ In this exam, I created seperate pages to handle each functionality. Also create
     <li>The username is persisted throughout the entire application using a state variable in the UserContext. Even after a page refresh, it remains available because it is also stored in localStorage. It will only be cleared when the user logs out.</li>
     </ul>
 
+    
     Events that are already full will be grayed out and will show "🚫 Event Full – RSVPs Closed" Message. 
     Events are filtered, Past events will not be shown.
    
